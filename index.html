@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁歷史存檔瀏覽</title>
+    <!-- 載入 ReplayWeb.page 播放器 -->
+    <script src="https://jsdelivr.net"></script>
+    <style>
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #f0f0f0; }
+        replay-page { width: 100vw; height: 100vh; display: block; }
+    </style>
+</head>
+<body>
+    <replay-page 
+        source="https://huggingface.co/datasets/JeanneWong/webarchives/resolve/main/30a-exhibition.warc?download=true"
+        embed="true"
+        no-wait="true">
+    </replay-page>
+</body>
+</html>
